@@ -6,17 +6,17 @@
         >
             <picture>
                 <source
-                    srcset="/hero.jpeg"
+                    srcset="/hero/hero.avif"
                     type="image/avif"
                     media="(width >= 800px)"
                 />
                 <source
-                    srcset="hero-small.avif"
+                    srcset="/hero/hero-small.avif"
                     type="image/avif"
                     media="(width <= 800px)"
                 />
                 <img
-                    class="h-[calc(100vh-50px)] w-full [-webkit-mask-image:linear-gradient(black,transparent)] [mask-image:linear-gradient(black,transparent)] object-cover object-top"
+                    class="h-[calc(100vh)] w-full [-webkit-mask-image:linear-gradient(to_bottom,black,transparent_100%)] [mask-image:linear-gradient(to_bottom,black,transparent_100%)] object-cover object-top opacity-65 md:opacity-100"
                     src="/hero.jpeg"
                     alt="Imagen de inicio"
                 />

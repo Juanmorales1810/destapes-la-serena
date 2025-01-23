@@ -7,6 +7,7 @@ import Contact from "@/components/interfaces/Contact.astro";
 import Layout from "@/layouts/Layout.astro";
 
 import "@/styles/global.css";
+import SwiperHome from "@/components/swiperGallery";
 ---
 
 <Layout
@@ -17,5 +18,6 @@ import "@/styles/global.css";
     <Service />
     <WhyUs />
     <Clients />
+    <SwiperHome client:only />
     <Contact />
 </Layout>

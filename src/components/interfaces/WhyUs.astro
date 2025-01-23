@@ -1,3 +1,7 @@
+---
+import SwiperHome from "../swiperGallery";
+---
+
 <section id="WhyUs" class="py-12 md:py-32">
     <div class="container mx-auto px-4">
         <div
@@ -116,12 +120,13 @@
                 >
                 </div>
                 <div class="border-r-2 border-muted-foreground/30 p-4"></div>
-                <div>
-                    <img
+                <div class="max-w-[270px] sm:max-w-[300px] md:max-w-[500px]">
+                    <!-- <img
                         src="whyus.jpeg"
                         alt="placeholder"
                         class="h-[340px] w-full rounded-xl object-cover"
-                    />
+                    /> -->
+                    <SwiperHome client:only />
                 </div>
                 <div class="border-l-2 border-muted-foreground/30 p-4"></div>
                 <div

@@ -4,11 +4,23 @@
             class="absolute inset-x-0 -z-10 transform-gpu overflow-hidden -top-16"
             aria-hidden="true"
         >
-            <img
-                src="/hero.jpeg"
-                alt="Imagen de inicio"
-                class="h-[calc(100vh-50px)] w-full [-webkit-mask-image:linear-gradient(black,transparent)] [mask-image:linear-gradient(black,transparent)] object-cover object-top"
-            />
+            <picture>
+                <source
+                    srcset="/hero.jpeg"
+                    type="image/avif"
+                    media="(width >= 800px)"
+                />
+                <source
+                    srcset="hero-small.avif"
+                    type="image/avif"
+                    media="(width <= 800px)"
+                />
+                <img
+                    class="h-[calc(100vh-50px)] w-full [-webkit-mask-image:linear-gradient(black,transparent)] [mask-image:linear-gradient(black,transparent)] object-cover object-top"
+                    src="/hero.jpeg"
+                    alt="Imagen de inicio"
+                />
+            </picture>
         </div>
         <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
             <div class="hidden sm:mb-8 sm:flex sm:justify-center">

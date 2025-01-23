@@ -1,4 +1,4 @@
-<section id="Reserva" class="py-32">
+<section id="Reserva" class="py-12 md:py-32">
     <div class="container mx-auto px-4">
         <div class="mb-14">
             <span class="text-sm font-semibold">LLega a nosotros</span>
@@ -35,8 +35,10 @@
                     </p><p class="mb-3 text-muted-foreground">
                         Nuestro equipo está listo para ayudar.
                     </p>
-                    <a href="#" class="font-semibold hover:underline"
-                        >abc@example.com</a
+                    <a
+                        href="mailto:destapelaserenacoquimbo@gmail.com"
+                        class="font-semibold hover:underline"
+                        >destapelaserenacoquimbo@gmail.com</a
                     >
                 </div><div>
                     <svg
@@ -59,7 +61,9 @@
                         Soporte de chat en vivo
                     </p><p class="mb-3 text-muted-foreground">
                         Solicite ayuda rápida.
-                    </p><a href="#" class="font-semibold hover:underline"
+                    </p><a
+                        href="https://api.whatsapp.com/send?phone=56959845747&text=Hola!%20Quiero%20contactarme%20con%20un%20asesor"
+                        class="font-semibold hover:underline"
                         >Iniciar un nuevo chat</a
                     >
                 </div><div>
@@ -81,8 +85,10 @@
                         class="mb-3 text-muted-foreground"
                     >
                         Pase por nuestra oficina para charlar.
-                    </p><a href="#" class="font-semibold hover:underline"
-                        >1234 Street Name, City Name</a
+                    </p><a
+                        href="https://maps.app.goo.gl/ubzc7NTquN7j6xqq9"
+                        class="font-semibold hover:underline"
+                        >Victor taborga Vega 1300, cielos del valle Coquimbo</a
                     >
                 </div><div>
                     <svg
@@ -104,14 +110,20 @@
                     >
                         Estamos disponibles de lunes a viernes, de 9 a. m. a 5
                         p. m.
-                    </p><a href="#" class="font-semibold hover:underline"
-                        >+123 456 7890</a
+                    </p><a
+                        href="tel:+56959845747"
+                        class="font-semibold hover:underline">+56 9 5984 5747</a
                     >
                 </div>
             </div><div
-                class="mx-auto flex w-full flex-col gap-6 rounded-lg bg-zinc-200 p-10 md:max-w-[464px]"
+                class="relative mx-auto flex w-full flex-col gap-6 rounded-lg p-10 md:max-w-[464px] overflow-hidden md:bg-zinc-200"
             >
-                <div class="grid gap-4 md:grid-cols-2">
+                <img
+                    class="absolute inset-0 z-0 w-full object-cover object-top opacity-60 rounded-lg [-webkit-mask-image:linear-gradient(to_top,black,transparent_100%)] [mask-image:linear-gradient(to_top,black,transparent_100%)] md:hidden"
+                    src="/contact.avif"
+                    alt="Imagen de inicio"
+                />
+                <div class="relative z-10 grid gap-4 md:grid-cols-2">
                     <div class="grid w-full items-center gap-1.5">
                         <label
                             class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
@@ -135,7 +147,9 @@
                             placeholder="Tu apellido"
                         />
                     </div>
-                </div><div class="grid w-full items-center gap-1.5">
+                </div><div
+                    class="relative z-10 grid w-full items-center gap-1.5"
+                >
                     <label
                         class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                         for="email">Email<sup class="ml-0.5">*</sup></label
@@ -145,7 +159,7 @@
                         id="email"
                         placeholder="Tu correo electrónico"
                     />
-                </div><div class="grid w-full gap-1.5">
+                </div><div class="relative z-10 grid w-full gap-1.5">
                     <label
                         class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                         for="message"
@@ -155,9 +169,9 @@
                         placeholder="¿Cómo podemos ayudarte?"
                         id="message"></textarea>
                 </div>
-                <div class="flex items-center space-x-2"></div>
+                <div class="relative z-10 flex items-center space-x-2"></div>
                 <button
-                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
+                    class="relative z-10 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
                     >Enviar</button
                 >
             </div>

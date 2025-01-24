@@ -81,7 +81,7 @@ export default function SwiperHome() {
                                 <source srcSet={image.webp} type="image/avif" media="(width >= 800px)" />
                                 <source srcSet={image.small} type="image/avif" media="(width <= 800px)" />
                                 <img
-                                    className='max-h-[400px] w-full rounded-md object-cover lg:max-h-[800px]'
+                                    className='max-h-[400px] w-full object-cover lg:max-h-[800px]'
                                     src={image.webp}
                                     alt={`Imagen ${image.id}`}
                                 />

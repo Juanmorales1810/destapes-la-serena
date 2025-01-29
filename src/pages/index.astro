@@ -1,21 +1,28 @@
 ---
-import Hero from "@/components/interfaces/Hero.astro";
-import Service from "@/components/interfaces/Service.astro";
-import WhyUs from "@/components/interfaces/WhyUs.astro";
 import Clients from "@/components/interfaces/Clients.astro";
+import Service from "@/components/interfaces/Service.astro";
 import Contact from "@/components/interfaces/Contact.astro";
+import WhyUs from "@/components/interfaces/WhyUs.astro";
+import Hero from "@/components/interfaces/Hero.astro";
+import Cta1 from "@/components/interfaces/Cta1.astro";
+import Cta2 from "@/components/interfaces/Cta2.astro";
 import Layout from "@/layouts/Layout.astro";
 
 import "@/styles/global.css";
+import Blogs from "@/components/interfaces/Blogs.astro";
 ---
 
 <Layout
     title="Destape La Serena y Coquimbo"
     description="Destape La Serena: especialistas en gasfitería y mantenimiento de alcantarillados, wc, lavamanos, piletas y tinas en La Serena y Coquimbo. Servicios eficientes, profesionales y disponibles 24/7."
+    canonical="https://www.destapes-laserena.cl/"
 >
     <Hero />
     <Service />
+    <Cta1 />
     <WhyUs />
+    <Cta2 />
     <Clients />
+    <Blogs />
     <Contact />
 </Layout>

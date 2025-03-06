@@ -9,13 +9,13 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-    site: "https://example.com",
-    integrations: [
-        mdx(),
-        sitemap(),
-        tailwind({
-            applyBaseStyles: false,
-        }),
-        react(),
-    ],
+  site: "https://www.destapes-laserena.cl/",
+  integrations: [
+    mdx(),
+    sitemap(),
+    tailwind({
+      applyBaseStyles: false,
+    }),
+    react(),
+  ],
 });
